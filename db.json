@@ -65,6 +65,28 @@
         "controlled"
       ],
       "correctIndex": 1
+    },
+    {
+      "prompt": "Hooks",
+      "answers": [
+        "UseEffect",
+        "NoEffect",
+        "Effect",
+        "State"
+      ],
+      "correctIndex": "0",
+      "id": 9
+    },
+    {
+      "prompt": "How do you know",
+      "answers": [
+        "UseEffect",
+        "B",
+        "Cess",
+        "State"
+      ],
+      "correctIndex": "2",
+      "id": 12
     }
   ]
 }
