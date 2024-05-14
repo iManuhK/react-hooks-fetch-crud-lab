@@ -9,10 +9,15 @@ function QuestionList() {
     .then(res=>res.json()
     .then(data=>setQuestions(data))) 
   },[])
+function handleDeleteQuestion(deletedQuestion){
+  const updatedItems = questionsList.filter((question) => question.id !== deletedQuestion.id);
+  setQuestions(updatedItems);
+}
     const questionItem = questionsList.map((question)=>(
         <QuestionItem 
           key={question.id}
           question = {question}
+          onDeleteQuestion ={handleDeleteQuestion}
         />
     ))
   return (
